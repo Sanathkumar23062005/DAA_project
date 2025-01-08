@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:nth-child(1) {
+            background-color: #d1e9ff;
+        }
+
+        .card:nth-child(2) {
+            background-color: #cce5ff;
+        }
+
+        .card:nth-child(3) {
+            background-color: #bfdfff;
+        }
+
+        .card:nth-child(4) {
+            background-color: #b3d8ff;
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #005bb5;
+        }
+
+        .card p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+
+        .card div span {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1em;
+        }
+
+        .card a:hover h2 {
+            color: #0056b3;
+        }
+
+        .card a:hover p {
+            color: #444;
+        }
+
+        .card .name-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .card .name-box h2 {
+            font-size: 1.6em;
+            color: #005bb5;
+        }
+
+        .card .name-box p {
+            font-size: 1em;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><strong>Business Cases</strong> Identified by Each Team Member:</h1>
+        
+    </header>
+
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <div class="name-box">
+                    <h2>Raghavendra Rao K</h2>
+                    
+                </div>
+                <div>
+                    <span>1. Congestion Prediction</span>
+                    <span>2. Emergency Vehicle Routing</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="name-box">
+                    <h2>K Rohidas Shenoy</h2>
+                    
+                </div>
+                <div>
+                    <span>1. Public Transport Scheduling</span>
+                    <span>2. Smart Parking System</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="name-box">
+                    <h2>Akshay J</h2>
+                    
+                </div>
+                <div>
+                    <span>1. Shortest Path Algorithm</span>
+                    <span>2. Traffic Density Control</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="name-box">
+                   <a href="indir.html">
+                    <h2>Sanath Kumar</h2>
+                       <h3>click here to see the Individual topics in Detail </h3>
+                    
+                </div>
+                <div>
+                    <span>1. Real-Time Toll Price Adjustment</span>
+                    <span>2. Vehicle Registration and License Plate Recognition System</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
